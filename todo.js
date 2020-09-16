@@ -54,7 +54,7 @@ function removeItem(){
             }else{
                 setTimeout(()=>{
                 alert('Your selected todos has been deleted')
-                },500)
+r                },500)
             }
 
     }
