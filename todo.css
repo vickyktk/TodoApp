@@ -1,25 +1,27 @@
 body{
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 20px;
 }
 .container{
-    position: absolute;
     background-color: rgb(202, 126, 98);
     min-height: 400px;
-    top:22%;
-    left: 35%;
     border: burlywood 3px solid;
     padding: 14px;
     border-radius: 30px;
     box-shadow: 0px 0px 1px 1px;
-
+    width: 270px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-.title{
-    margin-left: 18%;
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
 .add{
     height: 20px;
     width: 175px;
@@ -60,29 +62,29 @@ body{
 
 }
 
-#list{
-    max-height:200px;
-    overflow: auto;
-    margin-left: -40px;
-}
-
-li{
+#list {
     list-style: none;
-    margin-top: 5px;
-    text-transform: uppercase;
-    font-size: 18px;
-}
+    align-self: flex-start;
+    max-width: 100%;
+    height: 200px;
+    overflow: auto;
 
+}
 
 @media(max-width:768px){
     .container{
-        left: 15%;
-        top:20%
+        width: 80%;
+    }
+
+    #list {
+        max-width: 80%;
+    }
+
+    .todays,.title {
+        font-size: 20px;
     }
 
 }
-
-
 
 .footer{
     display: flex;
